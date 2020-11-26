@@ -36,18 +36,18 @@ The output contains all genomes in the sought specifications (in directories) an
 			-o --output
 			output directory
 
-	options:
-		-m --miss_pair => Default = 0.22
-		The error rate for comparing k-mers 
+		options:
+			-m --miss_pair => Default = 0.22
+			The error rate for comparing k-mers 
 		
-		-mx --max_len => Default = 3000
-		Max genome lenght
+			-mx --max_len => Default = 3000
+			Max genome lenght
 
-		-mn --min_len => Default = 1200
-		Min genome length				 
+			-mn --min_len => Default = 1200
+			Min genome length				 
 
-		-r --repetitions => Default = 3
-		Min number of repetitions. as higher as the number of repeats, the better the quality of the resulting genome.
+			-r --repetitions => Default = 3
+			Min number of repetitions. as higher as the number of repeats, the better the quality of the resulting genome.
 
 Global Consensus:
 Use concatamer consensus output file as input to generate Global consensus of all viruses found in the sample, the output contains the alignment of each consensus in genomes_corrected.fasta and consensus in consensus.fasta file within directories containing information from each cluster of sequences. additionally, global consensus is available in the file genomes_linearized.fasta
@@ -66,12 +66,12 @@ Use concatamer consensus output file as input to generate Global consensus of al
 			-o --output
 			output directory
 			
-	options:
-		-mc --min_cover => defalt = 50 
-		Minimun coverage for global consensus
+		options:
+			-mc --min_cover => defalt = 50 
+			Minimun coverage for global consensus
 		
-		-mi --min_id
-		Minimun identity between concatamer consensus sequence and reads
+			-mi --min_id
+			Minimun identity between concatamer consensus sequence and reads
 		
 
 
