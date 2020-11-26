@@ -82,6 +82,7 @@ Virus Finder: Genome classification using Kaiju and Diamond. you may have to mak
 		<sequences>
 			-i --input 
 			input file in FASTA/FASTQ format
+			
 		<output>
 			-o --output
 			output directory and files (you can choose to add a name to the files to differentiate them. E.g. ~/dir/run1)
