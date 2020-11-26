@@ -88,7 +88,25 @@ Virus Finder: Genome classification using Kaiju and Diamond. you may have to mak
 			output directory and files (you can choose to add a name to the files to differentiate them. E.g. ~/dir/run1)
 
 
+Variant Finder: Variant calling for each Global Consensus found, using the reads from the concatamers that form the consensus to compare and find genetic variations. 
 
+	python3 ~/circvirus/scripts/variant_finder -i <sequences> -r <reference> -d <directory> -o <output>
+	
+		<sequences>
+			-i --input
+			concatamer consensus output file in FASTA
+		
+		<reference>
+			-r --reference
+			global consensus output containing a single consensus in file (found inside a global consensus directory as consensus.fasta)
+		
+		<directory>
+			-d --dir
+			directory containing concatamer consensus output (including directories and file)
+			
+		<output>
+			-o --output
+			output directory
 
 
 
