@@ -75,7 +75,7 @@ Use concatamer consensus output file as input to generate Global consensus of al
 		
 
 
-Virus Finder: Genome classification using Kaiju and Diamond. you may have to make changes to the config file (pathway for Kaiju input and Diamond reference database). To set up a reference database for DIAMOND see https://github.com/bbuchfink/diamond.
+Virus Finder: Genome classification using Kaiju and Diamond. you may have to make changes to the config file (pathway for Kaiju input and Diamond reference database (e.g. nr.dmnd)). To set up a reference database for DIAMOND see https://github.com/bbuchfink/diamond.
 
 	python3 ~/circvirus/scripts/virus_finder.py -i <sequences> -o <output>
 		
