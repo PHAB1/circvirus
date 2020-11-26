@@ -1,7 +1,5 @@
 # circvirus
 
-# Description
-
 # Requeriments
 
 - Python 3.0 or >
