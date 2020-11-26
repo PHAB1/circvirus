@@ -4,9 +4,9 @@
 
 - Python 3.0 or >
 
-- Kaiju 
+- Kaiju (virus_finder only)
 
-- Diamond
+- Diamond (virus_finder only)
 
 - racon
 
