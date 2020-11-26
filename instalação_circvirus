@@ -1,0 +1,90 @@
+1. instale o pip3 antes de começar, para instalar alguns pacotes
+
+	sudo apt-get install --upgrade python3-pip
+
+2. Pode instalar alguns pacotes com o script install.py contido na pasta circvirus
+
+	python3 circvirus/install.py
+
+Os pacotes instalados serão:
+
+clustalx pbdagcon build-essential cmake ncbi-blast+ clustalw gcc make libbz2-dev zlib1g-dev libncurses5-dev libncursesw5-dev liblzma-dev numpy statsmodels==0.9.0 HTSeq pandas pybedtools==0.7.10 cython muscle biopython==1.74
+
+
+3. Os programas Racon e medaka devem ser instalados e o caminho dos binários precisam ser exportados
+
+a) Medaka:
+
+Install HTSLIB
+
+cd /usr/bin
+wget https://github.com/samtools/htslib/releases/download/1.9/htslib-1.9.tar.bz2
+tar -vxjf htslib-1.9.tar.bz2
+cd htslib-1.9
+make
+
+Install SAMTOOLS
+
+cd ..
+wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
+tar -vxjf samtools-1.9.tar.bz2
+cd samtools-1.9
+make
+
+Install BCFTools
+
+cd ..
+wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
+tar -vxjf bcftools-1.9.tar.bz2
+cd bcftools-1.9
+make
+
+Install minimap2
+
+git clone https://github.com/lh3/minimap2
+cd minimap2 && make
+
+Export
+	
+Export To Path And Refresh
+export PATH=$PATH:/usr/bin/bcftools-1.9
+export PATH=$PATH:/usr/bin/samtools-1.9
+export PATH=$PATH:/usr/bin/htslib-1.9
+export PATH=$PATH:/minimap2
+source ~/.profile
+
+install Medaka
+
+git clone https://github.com/nanoporetech/medaka.git
+cd medaka
+make install
+
+b) Racon
+
+git clone --recursive https://github.com/lbcb-sci/racon.git racon
+cd racon
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+
+4.Os programas para classificacao
+
+a) Kaiju
+
+git clone https://github.com/bioinformatics-centre/kaiju.git
+cd kaiju/src
+make
+
+b) Krona
+
+git clone https://github.com/marbl/Krona.git
+cd ~/Krona/KronaTools
+sudo ./install.pl
+
+
+b) Diamond
+
+
+
+
