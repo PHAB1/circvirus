@@ -87,4 +87,4 @@ b) Diamond
 
 
 
-
+5. Os caminhos para os executaveis para alguns programas precisam ser especificados em ~/circvirus/scripts/config.py. 
