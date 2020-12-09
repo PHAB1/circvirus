@@ -18,7 +18,7 @@ clustalw pbdagcon build-essential cmake ncbi-blast+ clustalw gcc make libbz2-dev
 # Use
 
 Concatamer Consensus:
-The output contains all genomes in the sought specifications (in directories) and a file with all the consensus, you may have to make changes to the config file (pathway for minimap2, samtools and racon programs). => config file in ~/circvirus/scripts/config.py
+The output contains all genomes in the sought specifications (in directories) and a file with the consensus, you may have to make changes to the config file (pathway for minimap2, samtools and racon programs). => config file in ~/circvirus/scripts/config.py
  
 	First use: 
 	
